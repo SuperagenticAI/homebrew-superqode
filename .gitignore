@@ -1,0 +1,2 @@
+# Explicitly ignore OS X Finder files.
+.DS_Store
