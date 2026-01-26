@@ -5,7 +5,7 @@ class Superqode < Formula
 
   if OS.mac?
     url "https://github.com/SuperagenticAI/superqode/releases/download/v0.1.4/superqode-0.1.4-macos-arm64.tar.gz"
-    sha256 "d7bb45c842191c6a441e8a9e04a33f769e83515ac5e033eb510b4ad761d67267"
+    sha256 "25eb26a060181f76096b890ae9300d7aee4db5d0cff83acf0a99527ef2903a87"
   elsif OS.linux?
     url "https://github.com/SuperagenticAI/superqode/releases/download/v0.1.4/superqode-0.1.4-linux-arm64.tar.gz"
     sha256 "1b6dca6a02172c58c3a595995fed81efd3ba2433e6d567aa2a3f11652f465672"
