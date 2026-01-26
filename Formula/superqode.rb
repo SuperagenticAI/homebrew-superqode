@@ -1,12 +1,18 @@
 class Superqode < Formula
-  desc "Agentic Quality Engineering Platform"
+  desc "Superior Quality-Oriented Agentic Software Development"
   homepage "https://super-agentic.ai"
-  url "https://github.com/SuperagenticAI/superqode/releases/download/v0.1.2/superqode-macos-x64"
-  version "0.1.2"
-  sha256 "b47eacec00a6b2179d2d48a01a0f6e95a1fc4832b370c2e96787c54992c75e1f"
+  version "0.1.3"
+
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/SuperagenticAI/superqode/releases/download/v0.1.3/superqode-macos-arm64.tar.gz"
+    sha256 "0052b092c51d8194884dd30debedbc399fa9558702684df8a96fb426b1d0af40"
+  elsif OS.linux? && Hardware::CPU.arm?
+    url "https://github.com/SuperagenticAI/superqode/releases/download/v0.1.3/superqode-linux-aarch64.tar.gz"
+    sha256 "42dcbb454efee5ac1a8f8ed05a965b82761738bf24f643b8cf417895ff86c4b7"
+  end
 
   def install
-    bin.install "superqode-macos-x64" => "superqode"
+    bin.install "superqode"
   end
 
   test do
