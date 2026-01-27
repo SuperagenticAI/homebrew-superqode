@@ -8,7 +8,7 @@ class Superqode < Formula
     sha256 "dc436564fdf0f5aa6f7436c454a784eb5b923ea2997ebdcc28ea5fad86c8ce12"
   elsif OS.linux?
     url "https://github.com/SuperagenticAI/superqode/releases/download/v0.1.4/superqode-0.1.4-linux-arm64.tar.gz"
-    sha256 "732d6b777953f64a438ccd116dbd42b9ee2bd59f29269a47db86e8345f351444"
+    sha256 "34234bc26d8842a50c16b9ac7b1827367e9c73d5bc229a043dabc6c52c57e8f0"
   end
 
   def install
